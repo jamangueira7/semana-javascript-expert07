@@ -16,11 +16,9 @@ async function getWorker() {
     }
     console.log('not support')
     return workerMock
-
 }
 
 const worker = await getWorker()
-worker.postMessage('hey form factory')
 
 const camera = await Camera.init()
 const [rootPath] = window.location.href.split('/pages/')
@@ -28,7 +26,8 @@ const factory = {
     async initialize() {
         return Controller.initialize({
             view: new View(),
-            service: new Service({})
+            worker,
+            camera
         })
     }
 }
