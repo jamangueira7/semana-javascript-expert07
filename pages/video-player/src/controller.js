@@ -55,7 +55,8 @@ export default class Controller {
         setTimeout(() => this.loop(), 100)
     }
     log(text) {
-        this.#view.log(`logger: ${text}`)
+        const times = `            - blicked times: ${this.#blinkCounter}`
+        this.#view.log(`status: ${text}`.concat(this.#blinkCounter ? times: ""))
     }
 
     onBtnStart() {
