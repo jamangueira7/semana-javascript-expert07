@@ -46,7 +46,8 @@ ClickGesture.addCurl(Finger.Pinky, FingerCurl.FullCurl, 0.9)
 
 const knownGestures = [
     ScrollDownGesture,
-    ScrollUpGesture
+    ScrollUpGesture,
+    ClickGesture
 ]
 
 const gestureStrings = {
