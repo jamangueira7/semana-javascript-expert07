@@ -53,6 +53,7 @@ const knownGestures = [
 const gestureStrings = {
     rock: '✊️',
     paper: '🖐',
+    scissors: '✌️',
 }
 
 export {
