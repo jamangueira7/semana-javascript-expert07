@@ -20,9 +20,24 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
+Projeto para movimentar a pagina com as mãos e rodar ou pausar os videos piscando.
+
+Gestos:
+
+- Pagina principal
+  - ✊️ - Page down
+  - 🖐 - Page up
+  - 🤏🏻 - Click
+
+- Pagina de um filme (clicar no botão "Initialize Blink Recognition" para iniciar)
+  - 😉 - Pausar ou iniciar video
+
+
 ### Preview
 
 ![demo-template-lg.gif](.github%2Fdemo-template-lg.gif)
+
+Projeto rodando [aqui](https://jamangueira7.github.io/semana-javascript-expert07/pages/titles/)
 
 ### FAQ
 - browser-sync está lançando erros no Windows e nunca inicializa:
@@ -43,8 +58,28 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
         - https://blog.tensorflow.org/2020/03/introducing-webassembly-backend-for-tensorflow-js.html
     - (agradecimentos ao usuario Volpin em nossa comunidade do Discord)
 
+### Checklist Features
+- Titles List
+    - [x] - Campo para pesquisa não deve travar ao digitar termo de pesquisa
+    - [x] - Deve desenhar mãos na tela e fazer com que elementos em segundo plano  continuem sendo clicáveis  🙌
+    - [x] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
+    - [x] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
+    - [x] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
+    - [x] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
+
+- Video Player
+    - [x] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
+    - [x] - Todo processamento de Machine Learning deve ser feito via Web worker
+
+
 ### Créditos
+
 - Interface baseada no projeto [Streaming Service](https://codepen.io/Gunnarhawk/pen/vYJEwoM) de [gunnarhawk](https://github.com/Gunnarhawk)
+- Projeto original [Erick Wendel](https://github.com/ErickWendel/semana-javascript-expert07)
+- Face Landmarks Detection [tensorflow](https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection)
+- Jogo pedra, papel e tesoura [Andreas Schallwig](https://github.com/andypotato/rock-paper-scissors)
+- Projeto para pegar gestos das mãos [Liad Yosef](https://github.com/liady/solar-hands)
+- PseudoStyler para hakear o hover pelo click [Tyler Sedlar](https://github.com/TSedlar/pseudo-styler)
 
 
 ## 🚀 Como Rodar
@@ -53,20 +88,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Execute `npm ci` na pasta que contém o arquivo `package.json` para restaurar os pacotes
 - Execute `npm start` e em seguida vá para o seu navegador em [http://localhost:3000](http://localhost:3000) para visualizar a página acima
 
-## Checklist Features
-- Titles List
-  - [x] - Campo para pesquisa não deve travar ao digitar termo de pesquisa
-  - [x] - Deve desenhar mãos na tela e fazer com que elementos em segundo plano  continuem sendo clicáveis  🙌
-  - [x] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
-  - [x] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
-  - [x] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
-  - [x] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
-
-- Video Player
-  - [x] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
-  - [x] - Todo processamento de Machine Learning deve ser feito via Web worker
-
-    
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
