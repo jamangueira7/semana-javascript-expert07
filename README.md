@@ -37,7 +37,7 @@ Gestos:
 
 ![demo-template-lg.gif](.github%2Fdemo-template-lg.gif)
 
-Projeto rodando [aqui](https://jamangueira7.github.io/semana-javascript-expert07/pages/titles/)
+Projeto rodando [clique aqui](https://jamangueira7.github.io/semana-javascript-expert07/pages/titles/)
 
 ### FAQ
 - browser-sync está lançando erros no Windows e nunca inicializa:
